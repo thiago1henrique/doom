@@ -1,0 +1,160 @@
+@font-face {
+    font-family: 'doom';
+    src: url(../assets/fonts/AmazDooMLeft.ttf);
+}
+
+body{
+    overflow-x:hidden;
+    background-color: #191919;
+}
+
+header{
+    display: flex;
+    justify-content: center;
+    background-color: rgb(31, 31, 31);
+    width: 100vw;
+    height: 100px;
+    position: fixed;
+    z-index: 2;
+}
+
+#imageHeader{
+    margin-top:10px;
+    height: 80px;
+    transition: transform .2s linear;
+}
+
+#imageHeader:hover{
+    transform: scale(1.08);
+}
+
+.doomTopo{
+    height:100vh;
+    width: 100vw;
+    background-image: url(../assets/images/doom.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.doomLogo{
+    margin-top: 30%;
+    margin-left: 1.5rem;
+    width: max(6rem, 20rem);
+    transition: transform .6s ease-in-out;
+}
+
+.doomLogo:hover{
+    transform: scale(1.02); 
+}
+
+.titulo{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    max-width: 100vw;
+}
+
+.tituloH1{
+    font-family: 'doom', Courier, monospace;
+    font-size: max(100px, 7vw);
+    letter-spacing: 10px;
+    text-align: center;
+    margin-top: 2rem;
+    color: #ffffff;
+    text-shadow: 0.1rem 0.1rem 1rem #ff0000d7;
+    transition: text-shadow .6s;
+}
+
+.tituloH1:hover{
+    transform: scale(1.08);
+}
+
+
+.doomMeio{
+    width: 100vw;
+    height: 100vh;
+    background-image: url(../assets/images/gifs/doom.gif);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.paragrafoMeio{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 2rem;
+    padding-left: 25px;
+    padding-right: 25px;
+    margin-bottom: 2rem;
+    color: #ffffff;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    font-size: 40px;
+}
+
+@media (max-width: 500px){
+    header{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 10vh;
+        width: 100%;
+    }
+
+    #imageHeader{
+        height: 50px;
+        width: 50px;
+    }
+
+    .doomTopo{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height:100vh;
+        width: 100%;
+        background-image: url(../assets/images/mobile/topo.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .doomLogo{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+    }
+    
+    .tituloH1{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: 1rem;
+        font-size: 25px;
+    }
+
+    .paragrafoMeio{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-top: 2rem;
+        padding-left: 25px;
+        padding-right: 25px;
+        font-size: 15px;
+        color: #ffffff;
+        font-family: 'Lato', sans-serif;
+        margin-bottom: 2rem;
+    }
+
+    .doomMeio{
+        display: flex;
+        justify-content: center;
+        width: 100vw;
+        height: 50vh;
+        background-image: url(../assets/images/gifs/doom.gif);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    
+    
+}
